@@ -37,7 +37,7 @@ jobs:
                 
             -   name: "Verify Docker WebGoat build"
                 if: runner.os == 'Linux'
-                uses: docker/build-push-action@v4.1.1
+                uses: docker/build-push-action@v6.18.0
                 with:
                     tags: localbuild/testimage:latest
                     push: false
